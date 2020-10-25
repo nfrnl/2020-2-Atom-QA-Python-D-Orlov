@@ -37,11 +37,7 @@ class APIClient:
         if response.status_code != status_code:
             raise ResponseStatusCodeException(f'Got {response.status_code} {response.reason} for URL "{url}"')
         if json_resp:
-            json_response = response.json()
-            if json_response.get('bStateError'):
-                error = json_response['sErrorMsg']
-                raise RequestErrorException(f'Request "{url}" failed with error "{error}"!')
-            return json_response
+            return response.json()
         return response
 
     def _get_csrf_token(self) -> None:
