@@ -7,10 +7,6 @@ class ResponseStatusCodeException(Exception):
     pass
 
 
-class RequestErrorException(Exception):
-    pass
-
-
 class CSRFTokenNotSetException(Exception):
     pass
 
