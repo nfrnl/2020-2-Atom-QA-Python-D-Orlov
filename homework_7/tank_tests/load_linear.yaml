@@ -1,0 +1,17 @@
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt
+  package: yandextank.plugins.DataUploader
+  job_name: Technoatom Linear App Load Testing
+  job_dsc: Linear Load
+phantom:
+  enabled: true
+  address: 192.168.1.29:5555
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: line(1, 5, 30)
+console:
+  enabled: true
+telegraf:
+  enabled: false

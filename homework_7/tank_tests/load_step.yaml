@@ -1,0 +1,17 @@
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt
+  package: yandextank.plugins.DataUploader
+  job_name: Technoatom Stepped App Load Testing
+  job_dsc: Stepped Load
+phantom:
+  enabled: true
+  address: 192.168.1.29:5555
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: step(1, 10, 2, 10s)
+console:
+  enabled: true
+telegraf:
+  enabled: false

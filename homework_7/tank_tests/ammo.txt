@@ -1,0 +1,12 @@
+[Connection: Close]
+[Host: 192.168.1.29:5555]
+/
+
+[Connection: Close]
+[Host: 192.168.1.29:5555]
+/posts
+
+[Connection: Close]
+[Host: 192.168.1.29:5555]
+[Authorization: Basic dXNlcl8xOnBhc3N3b3JkXzE=]
+/profile
